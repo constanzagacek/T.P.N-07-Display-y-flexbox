@@ -1,30 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo de box</title>
+    <title>Modelo de box</title>
     <style>
         body {
-            background-color: #d5bdaf;
+            background-color: #1b4332;
             margin: 0;
             padding: 0;
+            
+
         }
 
         .container {
+            /* Podés visitar: https://developer.mozilla.org/es/docs/Learn/CSS/CSS_layout/Flexbox#el_modelo_flexible para entender el modelo Flexbox */
             display: flex;
+            /* Establece el contenedor como un contenedor flex */
             flex-wrap: wrap;
+            /* Permite que los elementos se envuelvan en líneas adicionales si no hay suficiente espacio */
             justify-content: center;
+            /* Centra los elementos a lo largo del eje principal horizontal */
             align-items: center;
-            background-color: #e3d5ca;
+            /* Centra los elementos a lo largo del eje secundario vertical */
+            background-color: #2d6a4f;
             margin: 0 50px;
+            /* Margen a la derecha y a la izquierda. El valor 0 es para el margen superior e inferior */
+
         }
 
         header {
             display: flex;
+            /* Establece el encabezado como un contenedor flex */
             align-items: baseline;
+            /* Alinea los elementos del encabezado a lo largo de la línea de base */
             justify-content: space-between;
+            /* Distribuye los elementos del encabezado de manera uniforme a lo largo del eje principal horizontal */
             padding: 25px;
         }
 
@@ -42,20 +54,42 @@
         .box {
             width: 350px;
             padding: 20px;
-            background-color: #f5ebe0;
+            background-color: #40916c;
             margin: 10px;
             text-align: center;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
+
+        .box a {
+            color: #95d5b2;
+        }
+
+        .title {
+            font-size: xx-large;
+            font-family: cursive;
+            color: #081c15;
+            text-decoration: none;
+        }
+
+
     </style>
 </head>
 
 <body>
     <header>
         <div class="container-image">
-            <img src="./ContenidoAdicional/img/Logoalfajores.jpg" alt="Logo LA SIERRA" width="200px">
+            <img src="./ContenidoAdicional/img/Logoalfajores.png" alt="Logo LA SIERRA" width="140px">
         </div>
-        <h3 class="container-title">Mucho más que alfajores</h3>
+
+        <div class="title">
+            <h1>LA SIERRA ALFAJORES</h1>
+        </div>
+
+        <div>
+            <a href="https://arcorencasa.com/productos/chocolates/alfajores/">Muchos más elixires</a>
+        </div>
     </header>
+
     <main class="container">
 
         <div class="box">
